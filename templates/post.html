@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mycalorie</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href={{url_for('static', filename='styles.css')}} rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+       {% include 'navbar.html'   %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://cuisinen.com/wp-content/uploads/2021/01/indonesian-dishes.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Kalori Sehat, Hidup Sehat Mengapa Memahami Gizi Penting untuk Kesejahteraan Anda</h1>
+                            <h2 class="subheading">Pentingnya Memahami Gizi</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on August 24, 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Gizi adalah inti dari kesehatan.Apa yang kita konsumsi secara langsung memengaruhi kinerja tubuh kita,
+                            tingkat energi, dan kestabilan emosional. Memahami gizi dan, khususnya, kalori membantu kita membuat pilihan makanan yang cerdas dan sesuai dengan kebutuhan tubuh.
+                        </p>
+                        <p>Energi yang Dibutuhkan Tubuh Kalori adalah unit energi yang diberikan oleh makanan dan minuman yang kita konsumsi. Tubuh kita memerlukan kalori untuk menjalankan fungsi-fungsi dasar seperti bernafas, bergerak, dan mempertahankan suhu tubuh. Namun, penting untuk memahami bahwa tidak semua kalori diciptakan sama.</p>
+                        <p>Kualitas Kalori Lebih Penting daripada Kuantitasnya
+                           Bukan hanya tentang berapa banyak kalori yang kita konsumsi, tetapi juga tentang kualitasnya. Memilih makanan yang kaya nutrisi, seperti buah-buahan, sayuran, protein sehat, dan biji-bijian utuh, memberikan tubuh kita nutrisi yang diperlukan untuk berfungsi optimal.
+                           Mengelola Berat Badan
+                           Memahami aspek kalori juga membantu kita dalam upaya mengelola berat badan. Jika kita mengonsumsi lebih banyak kalori daripada yang dibakar tubuh, berat badan kita cenderung naik. Sebaliknya, dengan menciptakan keseimbangan antara asupan kalori dan aktivitas fisik, kita dapat mencapai dan menjaga berat badan yang sehat.</p>
+                        <h2 class="section-heading">Langkah-langkah Praktis untuk Menjaga Kesehatan</h2>
+                        <p>1. Perhatikan Jenis Makanan: Pilih makanan yang kaya akan nutrisi dan rendah lemak jenuh, gula, dan garam.</p>
+                        <p>2. Berolahraga Secara Teratur: Aktivitas fisik membantu membakar kalori dan meningkatkan kesehatan jantung.</p>
+                        <p>3. Air Penting: Minum cukup air sepanjang hari untuk menjaga hidrasi dan membantu proses pencernaan.</p>
+                        <p>4. Porsi yang Sesuai: Kontrol ukuran porsi untuk menghindari overeating.</p>
+                        <p>5. Konsistensi: Jadikan pilihan makanan sehat sebagai gaya hidup, bukan hanya diet sementara.</p>    
+                                <p>
+                            <a >Memahami gizi dan kalori adalah langkah pertama untuk mencapai kesejahteraan yang holistik. Dengan menyadari pentingnya kualitas kalori dan membuat pilihan makanan yang tepat, kita dapat membangun fondasi untuk hidup sehat dan bahagia. Jadi, mari bersama-sama menjadikan moto "Kalori Sehat, Hidup Sehat" sebagai panduan untuk perjalanan kesehatan kita.</a>
+                            &middot; Images by
+                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+         <!-- Footer-->
+         {% include 'footer.html'   %}
+         <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

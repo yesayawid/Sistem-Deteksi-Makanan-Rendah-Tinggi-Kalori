@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mycalorie</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href={{url_for('static', filename='styles.css')}} rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        {% include 'navbar.html'   %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://cuisinen.com/wp-content/uploads/2021/01/indonesian-dishes.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Prediksi MyCalori</h1>
+                            <span class="subheading">A Blog Theme by Calorie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/">
+                            <h2 class="post-title">Mengenal Kalori untuk Terapkan Pola Makan Sehat</h2>
+                            <h3 class="post-subtitle">Apa itu kalori?</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/">Hallo sehat</a>
+                            on September 24, 2023
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/#bagaimana-dengan-kalori-kosong">
+                            <h2 class="post-title">Mengenal Kalori untuk Terapkan Pola Makan Sehat</h2>
+                            <h3 class="post-subtitle">Bagaimana dengan kalori kosong?</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/#bagaimana-dengan-kalori-kosong">Hallo sehat</a>
+                            on September 18, 2023
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/#kebutuhan-kalori-harian">
+                            <h2 class="post-title">Mengenal Kalori untuk Terapkan Pola Makan Sehat</h2>
+                            <h3 class="post-subtitle">Kebutuhan kalori harian</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/#kebutuhan-kalori-harian">Hello sehat</a>
+                            on August 24, 2023
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/#risiko-kekurangan-kalori">
+                            <h2 class="post-title">Mengenal Kalori untuk Terapkan Pola Makan Sehat</h2>
+                            <h3 class="post-subtitle">Risiko kekurangan kalori</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/#risiko-kekurangan-kalori">Hallo sehat</a>
+                            on July 8, 2023
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="https://hellosehat.com/nutrisi/fakta-gizi/pengertian-kalori/">Older Posts →</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        {% include 'footer.html'   %}
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calorie Predictor</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #5684b9;
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4545a0;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #4545a0;
+      }
+      .result-container {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+        nav {
+        background-color: #333;
+        padding: 10px 10px;
+
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin:  10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <a href="/">Predict</a>
+        <a href="/chatbot-interface">Chatbot</a>
+      </nav>
+    <form method="post" enctype="multipart/form-data">
+      <h1>My Calorie Predictor</h1>
+      <label for="file">Choose an Image:</label>
+      <input type="file" name="file" accept=".jpg, .png" required />
+      <button type="submit">Predict</button>
+
+      Display the result below the button -->
+      <!-- <div class="result-container">
+        {% if prediction_result %}
+            <p>Predicted: {{ prediction_result.result }}</p>
+            <br>
+            <p >Category: {{ prediction_result.category }}</p>
+            <br>
+            {% if prediction_result.calories %}
+                <p>Calories (100 grams): {{ prediction_result.calories }}</p>
+            {% endif %}
+        {% endif %}
+    </div>
+    </form>
+  </body>
+</html> -->

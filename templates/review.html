@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Input Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .container-form {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .navbar {
+            background-color: #6c757d;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff;
+        }
+
+        .content-container {
+            display: none;
+        }
+
+        #content-input-review, #content-visualisasi {
+            display: block;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html'   %}
+    <form id="reviewForm" method="post">
+        <div class="container container-form content-container" id="content-input-review">
+            <!-- Input Review Form -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="tanggal" class="form-label">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="review" class="form-label">Ulasan</label>
+                <textarea class="form-control" id="review" name="review" rows="3" placeholder="Masukkan Ulasan Anda" required></textarea>
+            </div>
+    
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Kirim</button>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script>
+            function showContent(contentId) {
+                document.getElementById("content-input-review").style.display = (contentId === 'input-review') ? 'block' : 'none';
+                document.getElementById("content-visualisasi").style.display = (contentId === 'visualisasi') ? 'block' : 'none';
+            }
+
+            function submitForm() {
+                // Get form data
+                var formData = {
+                    'nama': document.getElementById('nama').value,
+                    'tanggal': document.getElementById('tanggal').value,
+                    'review': document.getElementById('review').value
+                };
+
+                // Send AJAX request to submit form
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/submit', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // Form submitted successfully
+                        alert("Form submitted successfully!");
+                    }
+                };
+                xhr.send(JSON.stringify(formData));
+            }
+        </script>
+    </form>
+    
+</body>
+</html>
